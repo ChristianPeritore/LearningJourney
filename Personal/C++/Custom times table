@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float number, result;
+    int multiplier;
+    cout << "Enter a number to generate its multiplication table up to 10:" << endl;
+    cin >> number;
+    for (multiplier = 1; multiplier <= 10; multiplier++) {
+        result = number * multiplier;
+        cout << number << " multiplied by " << multiplier << " is " << result << endl;
+    }
+    return 0;
+}
