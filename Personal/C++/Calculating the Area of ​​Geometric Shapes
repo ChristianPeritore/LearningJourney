@@ -1,13 +1,10 @@
 #include <iostream>
 #include <cmath>
-
 using namespace std;
-
 int main() {
     char choice;
     float side, area, perimeter, base, height, radius, circumference, side1, side2, side3;
     const float PI = 3.14159;
-
     do {
         cout << "\n--- GEOMETRIC CALCULATOR ---" << endl;
         cout << "Choose an option:" << endl;
@@ -18,7 +15,6 @@ int main() {
         cout << "e: Exit" << endl;
         cout << "Selection: ";
         cin >> choice;
-
         switch (choice) {
             case 's':
                 cout << "Enter the side: ";
@@ -31,7 +27,6 @@ int main() {
                     cout << "Side: " << side << "\nArea: " << area << "\nPerimeter: " << perimeter << endl;
                 }
                 break;
-
             case 'r':
                 cout << "Enter base and height: ";
                 cin >> base >> height;
@@ -43,7 +38,6 @@ int main() {
                     cout << "Base: " << base << "\nHeight: " << height << "\nArea: " << area << "\nPerimeter: " << perimeter << endl;
                 }
                 break;
-
             case 't':
                 cout << "Enter base and height for the area: ";
                 cin >> base >> height;
@@ -62,7 +56,6 @@ int main() {
                     }
                 }
                 break;
-
             case 'c':
                 cout << "Enter the radius: ";
                 cin >> radius;
@@ -74,16 +67,13 @@ int main() {
                     cout << "Radius: " << radius << "\nArea: " << area << "\nCircumference: " << circumference << endl;
                 }
                 break;
-
             case 'e':
                 cout << "Exiting the program. Goodbye!" << endl;
                 break;
-
             default:
                 cout << "Error: Invalid selection. Please try again." << endl;
                 break;
         }
     } while (choice != 'e');
-
     return 0;
 }
