@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char licenseType;
+    cout << "Enter license type (A-motorcycle, B-car, C-truck, D-bus): " << endl;
+    cin >> licenseType;
+    switch (licenseType) {
+        case 'A':
+            cout << "You can drive motorcycles." << endl;
+            break;
+        case 'B':
+            cout << "You can drive cars." << endl;
+            break;
+        case 'C':
+            cout << "You can drive trucks." << endl;
+            break;
+        case 'D':
+            cout << "You can drive buses." << endl;
+            break;
+        default:
+            cout << "Invalid category." << endl;
+            break;
+    }
+    return 0;
+}
