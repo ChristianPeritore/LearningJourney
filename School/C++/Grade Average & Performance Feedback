@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float grade1, grade2, grade3, average;
+    cout << "Enter 3 grades (from 1 to 10):" << endl;
+    cin >> grade1 >> grade2 >> grade3;
+    average = (grade1 + grade2 + grade3) / 3;
+    if (average >= 6) {
+        cout << "Congratulations! Your average is sufficient." << endl;
+    } else {
+        cout << "You need to study more. Your average is insufficient." << endl;
+    }
+    cout << "The average is: " << average << endl;
+    return 0;
+}
