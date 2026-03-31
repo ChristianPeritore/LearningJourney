@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int DISCOUNT_PERCENT = 10;
+    float price, discountAmount, discountedPrice;
+
+    cout << "Enter the price: ";
+    cin >> price;
+
+    // Apply a 10% discount if the price is greater than 30
+    if (price > 30) {
+        discountAmount = (price * DISCOUNT_PERCENT) / 100;
+        discountedPrice = price - discountAmount;
+        
+        cout << "Discount applied! You pay: " << discountedPrice << " €" << endl;
+        cout << "(You saved: " << discountAmount << " €)" << endl;
+    } else {
+        cout << "No discount available for this amount. You pay: " << price << " €" << endl;
+    }
+
+    return 0;
+}
