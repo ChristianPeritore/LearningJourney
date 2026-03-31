@@ -1,59 +1,89 @@
 #include <iostream>
 #include <cmath>
+
 using namespace std;
+
 int main() {
     char choice;
     float side, area, perimeter, base, height, radius, circumference, side1, side2, side3;
     const float PI = 3.14159;
+
     do {
         cout << "\n--- GEOMETRIC CALCULATOR ---" << endl;
-        cout << "Enter the letter corresponding to a shape:" << endl;
-        cout << "s: Square" << endl;
-        cout << "r: Rectangle" << endl;
-        cout << "t: Triangle" << endl;
-        cout << "c: Circle" << endl;
+        cout << "Choose an option:" << endl;
+        cout << "s: Square (Area & Perimeter)" << endl;
+        cout << "r: Rectangle (Area & Perimeter)" << endl;
+        cout << "t: Triangle (Area & Perimeter)" << endl;
+        cout << "c: Circle (Area & Circumference)" << endl;
         cout << "e: Exit" << endl;
-        cout << "Choice: ";
+        cout << "Selection: ";
         cin >> choice;
+
         switch (choice) {
             case 's':
                 cout << "Enter the side: ";
                 cin >> side;
-                area = pow(side, 2);
-                perimeter = side * 4;
-                cout << "Side: " << side << ", Area: " << area << ", Perimeter: " << perimeter << endl;
+                if (side <= 0) {
+                    cout << "Error: Value must be greater than 0." << endl;
+                } else {
+                    area = pow(side, 2);
+                    perimeter = side * 4;
+                    cout << "Side: " << side << "\nArea: " << area << "\nPerimeter: " << perimeter << endl;
+                }
                 break;
+
             case 'r':
                 cout << "Enter base and height: ";
                 cin >> base >> height;
-                area = base * height;
-                perimeter = 2 * (base + height);
-                cout << "Base: " << base << ", Height: " << height << ", Area: " << area << ", Perimeter: " << perimeter << endl;
+                if (base <= 0 || height <= 0) {
+                    cout << "Error: Values must be greater than 0." << endl;
+                } else {
+                    area = base * height;
+                    perimeter = 2 * (base + height);
+                    cout << "Base: " << base << "\nHeight: " << height << "\nArea: " << area << "\nPerimeter: " << perimeter << endl;
+                }
                 break;
+
             case 't':
                 cout << "Enter base and height for the area: ";
                 cin >> base >> height;
-                area = (base * height) / 2;
-                cout << "For the perimeter, enter the length of the 3 sides: ";
-                cin >> side1 >> side2 >> side3;
-                perimeter = side1 + side2 + side3;
-                cout << "Base: " << base << ", Height: " << height << ", Area: " << area << endl;
-                cout << "Sides: " << side1 << ", " << side2 << ", " << side3 << ", Perimeter: " << perimeter << endl;
+                if (base <= 0 || height <= 0) {
+                    cout << "Error: Values must be greater than 0." << endl;
+                } else {
+                    area = (base * height) / 2;
+                    cout << "Enter the length of the 3 sides for the perimeter: ";
+                    cin >> side1 >> side2 >> side3;
+                    if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
+                        cout << "Error: Values must be greater than 0." << endl;
+                    } else {
+                        perimeter = side1 + side2 + side3;
+                        cout << "Base: " << base << ", Height: " << height << "\nArea: " << area << endl;
+                        cout << "Sides: " << side1 << ", " << side2 << ", " << side3 << "\nPerimeter: " << perimeter << endl;
+                    }
+                }
                 break;
+
             case 'c':
                 cout << "Enter the radius: ";
                 cin >> radius;
-                area = PI * pow(radius, 2);
-                circumference = 2 * PI * radius;
-                cout << "Radius: " << radius << ", Area: " << area << ", Circumference: " << circumference << endl;
+                if (radius <= 0) {
+                    cout << "Error: Value must be greater than 0." << endl;
+                } else {
+                    area = PI * pow(radius, 2);
+                    circumference = 2 * PI * radius;
+                    cout << "Radius: " << radius << "\nArea: " << area << "\nCircumference: " << circumference << endl;
+                }
                 break;
+
             case 'e':
                 cout << "Exiting the program. Goodbye!" << endl;
                 break;
+
             default:
                 cout << "Error: Invalid selection. Please try again." << endl;
                 break;
         }
     } while (choice != 'e');
+
     return 0;
 }
