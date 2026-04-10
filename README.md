@@ -1,7 +1,30 @@
 # LearningJourney
-This is a repository documents all my journey in becoming a devloper and a programmer.
-Most of them are not entire project, but little fragments of code based on a specific excercise.
-This repository could change overtime.
-# Programing languages used: python, c++, arduino (based on c and c++).
-# Personal = projects or mini-projects made by myself for personal use and for trying to solve a challenge.
-# School = excercises created to complete a school task.
+
+Welcome! This repository serves as a live documentation of my path to becoming a developer and programmer.
+
+Most of the contents here are not full-scale projects, but rather **code snippets and fragments** focused on mastering specific exercises and concepts. As I learn more, this repository will evolve and grow.
+
+---
+
+### 🛠 Programming Languages
+I am currently working with:
+* **Python** (General purpose & scripting)
+* **C++** (Software development & logic)
+* **Arduino** (Hardware programming based on C/C++)
+
+---
+
+### 📂 Repository Structure
+To keep things organized, I’ve categorized my work into two main sections:
+
+#### 👤 Personal
+Projects or mini-challenges I created for myself. These are focused on problem-solving, testing new libraries, or building tools for my own use.
+
+#### 🏫 School
+Exercises and assignments specifically designed to meet school curriculum requirements and tasks.
+
+---
+
+### 📝 Notes
+> [!NOTE]
+> This repository is a "work in progress" and will change frequently as I progress through my learning journey.
