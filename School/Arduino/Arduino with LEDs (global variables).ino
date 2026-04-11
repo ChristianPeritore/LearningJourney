@@ -1,13 +1,11 @@
-int NumeroPin = 13;
-int Ritardo = 200;
-void setup()
-{
-pinMode(NumeroPin, OUTPUT);
+int pin = 13;
+int retard = 200;
+void setup(){
+pinMode(pin, OUTPUT);
 }
-void loop()
-{
-digitalWrite(NumeroPin, HIGH);
-delay(Ritardo);
-digitalWrite(NumeroPin, LOW);
-delay(Ritardo);
+void loop(){
+digitalWrite(pin, HIGH);
+delay(retard);
+digitalWrite(pin, LOW);
+delay(retard);
 }
