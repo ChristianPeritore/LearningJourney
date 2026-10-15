@@ -6,7 +6,7 @@ Most of the contents here are not full-scale projects, but rather **code snippet
 
 ---
 
-### 🛠 Programming Languages
+### Programming Languages
 I am currently working with:
 * **Python** (General purpose & scripting)
 * **C++** (Software development & logic)
@@ -14,17 +14,17 @@ I am currently working with:
 
 ---
 
-### 📂 Repository Structure
+### Repository Structure
 To keep things organized, I’ve categorized my work into two main sections:
 
-#### 👤 Personal
+#### Personal
 Projects or mini-challenges I created for myself. These are focused on problem-solving, testing new libraries, or building tools for my own use.
 
-#### 🏫 School
+#### School
 Exercises and assignments specifically designed to meet school curriculum requirements and tasks.
 
 ---
 
-### 📝 Notes
+### Notes
 > [!NOTE]
 > This repository is a "work in progress" and will change frequently as I progress through my learning journey.
